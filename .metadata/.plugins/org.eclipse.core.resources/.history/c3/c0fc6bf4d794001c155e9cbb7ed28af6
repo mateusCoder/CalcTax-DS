@@ -1,0 +1,35 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Program {
+
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		
+		
+		System.out.println("Enter the number of taxpayers: ");
+		int N = sc.nextInt();
+		
+		List<TaxPayer> list = new ArrayList<TaxPayer>();
+		
+		for(int i = 1; i <= N; i++) {
+			System.out.println("Taxpayer #" + i + " data:");
+			System.out.println("Individual or company (i/c)?");
+			char type = sc.next().charAt(0);
+			
+			System.out.println("Name: ");
+			String name = sc.next();
+			System.out.println("Anual income: ");
+			Double anualIncome = sc.nextDouble();
+		}
+		
+		
+		sc.close();
+	}
+
+}
