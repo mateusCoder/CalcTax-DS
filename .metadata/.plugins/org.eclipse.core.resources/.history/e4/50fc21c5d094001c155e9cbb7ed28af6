@@ -1,5 +1,5 @@
 
-public abstract class TaxPayer {
+public class TaxPayer {
 	private String name;
 	private Double anualIncome;
 	
@@ -28,5 +28,8 @@ public abstract class TaxPayer {
 		this.anualIncome = anualIncome;
 	}
 	
-	public abstract Double tax();
+//	public Double tax() {
+//		
+//	}
+//	
 }
