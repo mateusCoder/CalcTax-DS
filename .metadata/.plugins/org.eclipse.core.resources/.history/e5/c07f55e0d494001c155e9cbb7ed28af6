@@ -1,0 +1,18 @@
+
+public class Company extends TaxPayer {
+	
+	private Integer numberOfEMployees;
+	
+
+	public Company(String name, Double anualIncome, Integer numberOfEMployees) {
+		super(name, anualIncome);
+		this.numberOfEMployees = numberOfEMployees;
+	}
+
+	@Override
+	public Double tax() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
